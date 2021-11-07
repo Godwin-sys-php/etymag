@@ -1,0 +1,380 @@
+body {
+  font-family: Roboto;
+  color: black;
+  font-weight: lighter;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSlab';
+  src: url('JosefinSlab.ttf');
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+  display: flex;
+  overflow: visible;
+}
+
+.navbar {
+  background-color: #343a40;
+  color: white;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar > a {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+}
+
+.navbar > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar > div > a {
+  text-decoration: none;
+  color: #6c757d;
+  text-align: right;
+}
+
+.active {
+  color: white !important;
+}
+
+.banniere {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.banniere > h1 {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  font-size: 600%;
+}
+
+.banniere > h2 {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  font-size: 500%;
+}
+
+.banniere > h3 {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  font-size: 150%;
+  font-style: italic;
+}
+
+.active:hover {
+  color: white !important;
+}
+
+.navbar > div > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  width: 50vw;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 5%;
+  display: flex;
+  transition: transform 500ms ease-in;
+  cursor: pointer;
+}
+
+/* .card:hover {
+  transform: scale(1.1);
+} */
+
+.card > img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card > div >  h4 {
+  width: 100%;
+  font-size: xx-large;
+  color: black;
+}
+
+.card > div > h5 {
+  width: 100%;
+  font-weight: 100;
+  font-size: 130%;
+  color: grey;
+}
+
+.content {
+  margin-left: 0px;
+  padding: 0;
+}
+
+.title {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+}
+
+.title-content {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  color: black;
+  font-size: 700%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.special-font {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+}
+
+.medium-font {
+  font-size: 200%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  text-align: left;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 8%;
+  flex-wrap: wrap;
+  font-size: 125%;
+  font-weight: bold;
+  border-bottom: solid 1px silver;
+  /* padding-right: 8%; */
+  padding-bottom: 8%;
+  padding-top: 8%;
+}
+
+.stat > div {
+  display: flex;
+}
+
+.writers {
+  display: flex;
+  width: 100%;
+  margin-left: 8%;
+  font-size: 160%;
+  font-weight: bold;
+  border-bottom: solid 1px silver;
+  /* padding-right: 8%; */
+  padding-bottom: 8%;
+  padding-top: 8%;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+}
+
+.writers > div > img {
+  width: 20%;
+}
+
+.writers > div:hover {
+  transform: scale(1.10);
+}
+
+.writers > div {
+  transition: transform 200ms ease-out;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.margin-top-2x {
+  margin-top: 4%;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.quote {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  color: black;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-space-beetwen {
+  justify-content: space-around;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+  margin-left: 8%;
+  font-size: 100%;
+  font-weight: bold;
+  border-bottom: solid 1px silver;
+  /* padding-right: 8%; */
+  padding-bottom: 8%;
+  padding-top: 8%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categories > a {
+  width: 40%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  border-radius: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  color: white;
+  transition: transform 200ms ease-out;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+.categories > a:hover {
+  transform: scale(1.10);
+}
+
+.categories > a:nth-child(1) {
+  background-color: #007afd;
+}
+
+.categories > a:nth-child(2) {
+  background-color: orange;
+}
+
+.categories > a:nth-child(3) {
+  background-color: #6c757d;
+}
+
+.categories > a:nth-child(4) {
+  background-color: #28a745;
+}
+
+.tech-bg {
+  background-color: #6c757d;
+  color: white;
+}
+
+.world-bg {
+  background-color: #007afd;
+  color: white;
+}
+
+.child-bg {
+  background-color: #28a745;
+  color: white;
+}
+
+.sport-bg {
+  background-color: orange;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.container-article {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.article-img {
+  width: 80vw;
+  margin: 0;
+}
+
+.article-title {
+  font-family: JosefinSlab, 'Courier New', Courier, monospace;
+  font-size: 400%;
+  padding-right: 5%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.article-subtitle {
+  font-family: Roboto;
+  font-size: 200%;
+  padding-right: 5%;
+  margin: 0;
+  color: grey;
+  font-weight: lighter;
+  margin-bottom: 5%;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  font-size: 160%;
+  font-weight: bold;
+  flex-wrap: wrap;
+  width: 100%;
+  cursor: pointer;
+}
+
+.profile > img {
+  width: 8%;
+  height: 100%;
+  margin-right: 2%;
+  border-radius: 15%;
+}
+
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile > div > h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 75%;
+  color: silver;
+}
+
+.article-content {
+  font-size: 175%;
+  font-weight: lighter;
+}
